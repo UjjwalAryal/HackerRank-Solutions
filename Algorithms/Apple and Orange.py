@@ -1,0 +1,7 @@
+s,t = map(int,raw_input().strip().split(' '))
+a,b = map(int,raw_input().strip().split(' '))
+m,n = map(int,raw_input().strip().split(' '))
+app = map(int,raw_input().strip().split(' '))
+orr = map(int,raw_input().strip().split(' '))
+print sum(map(lambda x: 1 if (a + x)>=s and (a+x)<=t else 0, app))
+print sum(map(lambda x: 1 if (b + x)>=s and (b+x)<=t else 0, orr))
